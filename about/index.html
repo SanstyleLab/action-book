@@ -69,7 +69,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "xinetzone/sanstyle-starter");
+    script.setAttribute("repo", "SanstyleLab/action-book");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -142,8 +142,13 @@ commentsRunWhenDOMLoaded(addUtterances);
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../start/topic.html">
-     某个主题
+    <a class="reference internal" href="../start/00_start.html">
+     快速入门
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../start/python.html">
+     构建和测试 Python
     </a>
    </li>
   </ul>
@@ -368,11 +373,11 @@ commentsRunWhenDOMLoaded(addUtterances);
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/xinetzone/sanstyle-starter"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/SanstyleLab/action-book"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/sanstyle-starter/issues/new?title=Issue%20on%20page%20%2Fabout/index.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/SanstyleLab/action-book/issues/new?title=Issue%20on%20page%20%2Fabout/index.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -411,7 +416,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     {
         requestKernel: true,
         binderOptions: {
-            repo: "xinetzone/sanstyle-starter",
+            repo: "SanstyleLab/action-book",
             ref: "main",
         },
         codeMirrorConfig: {

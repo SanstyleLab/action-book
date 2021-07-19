@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>基础</title>
+    <title>快速入门</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -92,12 +92,12 @@ commentsRunWhenDOMLoaded(addUtterances);
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://xinetzone.github.io/sanstyle-starter/basics/topic.html" />
+    <link rel="canonical" href="https://xinetzone.github.io/sanstyle-starter/start/00_start.html" />
     <link rel="shortcut icon" href="../_static/page-logo.jfif"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="主题1" href="../topics/index.html" />
-    <link rel="prev" title="指南" href="index.html" />
+    <link rel="next" title="构建和测试 Python" href="python.html" />
+    <link rel="prev" title="快速上手" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -131,40 +131,40 @@ commentsRunWhenDOMLoaded(addUtterances);
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../start/index.html">
-   快速上手
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../start/00_start.html">
-     快速入门
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../start/python.html">
-     构建和测试 Python
-    </a>
-   </li>
-  </ul>
- </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="index.html">
-   指南
+   快速上手
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
+     快速入门
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python.html">
+     构建和测试 Python
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../basics/index.html">
+   指南
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../basics/topic.html">
      基础
     </a>
    </li>
@@ -357,7 +357,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/basics/topic.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/start/00_start.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -377,7 +377,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/SanstyleLab/action-book/issues/new?title=Issue%20on%20page%20%2Fbasics/topic.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/SanstyleLab/action-book/issues/new?title=Issue%20on%20page%20%2Fstart/00_start.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -407,7 +407,51 @@ commentsRunWhenDOMLoaded(addUtterances);
               <div>
                 
   <div class="section" id="id1">
-<h1>基础<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>快速入门<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>本文将介绍如何从零开始创建 GitHub Action。</p>
+<ol class="simple">
+<li><p>创建一个 GitHub 仓库，比如：<a class="reference external" href="https://github.com/xinetzone/test">xinetzone/test</a>。</p></li>
+<li><p>将 xinetzone/test 克隆到本地，并在 <code class="docutils literal notranslate"><span class="pre">.github/workflows</span></code> 目录中创建一个名为 <code class="docutils literal notranslate"><span class="pre">demo.yml</span></code> 的新文件。</p></li>
+<li><p>将以下 YAML 内容复制到 <code class="docutils literal notranslate"><span class="pre">demo.yml</span></code> 文件中：</p></li>
+</ol>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<dl class="simple myst">
+<dt><code class="docutils literal notranslate"><span class="pre">name</span></code></dt><dd><p>（可选）将出现在 GitHub 仓库的 Actions（操作）选项卡中的工作流程名称。 如果省略 <code class="docutils literal notranslate"><span class="pre">name</span></code>，GitHub 将其设置为相对于仓库根目录的工作流程文件路径。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">on</span></code></dt><dd><p>指定自动触发工作流程文件的事件。此示例使用 <code class="docutils literal notranslate"><span class="pre">push</span></code> 事件，这样每次有人推送更改到仓库时，作业都会运行。您可以设置工作流程仅在特定分支、路径或标记上运行。有关包含或排除分支、路径或标记的语法示例，请参阅“<a class="reference external" href="https://docs.github.com/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths">GitHub Actions 的工作流程语法</a>”。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">jobs</span></code></dt><dd><p>将工作流程文件中运行的所有作业组合在一起。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">check-bats-version</span></code></dt><dd><p>定义存储在 <code class="docutils literal notranslate"><span class="pre">jobs</span></code> 部分的作业的名称。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">runs-on</span></code></dt><dd><p>配置作业在运行器上运行。这意味着该作业将在 GitHub 托管的新虚拟机上执行。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">steps</span></code></dt><dd><p>将作业中运行的所有步骤组合在一起。此部分下嵌套的每项都是一个单独的操作或 shell 命令。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">uses</span></code></dt><dd><p><code class="docutils literal notranslate"><span class="pre">uses</span></code> 关键字指示作业的操作。只要工作流程针对仓库的代码运行，或者您使用仓库中定义的操作，您都必须使用检出操作。（<code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">uses:</span> <span class="pre">actions/checkout&#64;v2</span></code>）</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">run</span></code></dt><dd><p><code class="docutils literal notranslate"><span class="pre">run</span></code> 关键字指示作业在运行器上执行命令。</p>
+</dd>
+</dl>
+</div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GitHub Actions Demo</span>
+<span class="nt">on</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">push</span><span class="p p-Indicator">]</span>
+<span class="nt">jobs</span><span class="p">:</span>
+  <span class="nt">check-bats-version</span><span class="p">:</span>
+    <span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+    <span class="nt">steps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+      <span class="p p-Indicator">-</span> <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/setup-node@v1</span>
+      <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">npm install -g bats</span>
+      <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bats -v</span>
+</pre></div>
+</div>
+<p>将修改后的内容提交、推送到 GitHub，便可看到：</p>
+<p><img alt="" src="../_images/action-test.png" /></p>
+<p>更详细的介绍见 <a class="reference external" href="https://docs.github.com/en/actions/quickstart">Quickstart for GitHub Actions</a>。</p>
+<p>至此便是一个简单的 GitHub Action 创建过程。</p>
+<p><a class="reference external" href="https://github.com/marketplace/actions/">GitHub Marketplace</a> 可以查找一些常用的操作。</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -423,7 +467,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./basics"
+            path: "./start"
         },
         predefinedOutput: true
     }
@@ -435,8 +479,8 @@ commentsRunWhenDOMLoaded(addUtterances);
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">指南</a>
-    <a class='right-next' id="next-link" href="../topics/index.html" title="next page">主题1</a>
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">快速上手</a>
+    <a class='right-next' id="next-link" href="python.html" title="next page">构建和测试 Python</a>
 
         </div>
         
