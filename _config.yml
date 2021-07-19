@@ -66,10 +66,10 @@ html:
   comments:
     hypothesis: true
     utterances:
-      repo: "xinetzone/sanstyle-starter"
+      repo: "SanstyleLab/action-book"
 
 repository:
-  url: https://github.com/xinetzone/sanstyle-starter # The URL to your book's repository
+  url: https://github.com/SanstyleLab/action-book # The URL to your book's repository
   path_to_book: "./" # A path to your book's folder, relative to the repository root., ie docs
   branch: main # Which branch of the repository should be used when creating links
 
